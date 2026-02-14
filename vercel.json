@@ -1,8 +1,5 @@
 {
      "version": 2,
-     "env":{
-            "MYSQL_HOST": "remotemysql.com"
-     },
      "builds": [
          {
              "src": "api/index.js",
