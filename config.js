@@ -1,5 +1,5 @@
 module.exports = {
-    remoteDB: process.env.REMOTE_DB || false,
+    remoteDB: process.env.REMOTE_DB || true,
     api: {
         port: process.env.API_PORT || 3000,        
     },
