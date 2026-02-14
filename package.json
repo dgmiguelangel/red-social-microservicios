@@ -26,7 +26,8 @@
     "mysql2": "^3.17.0",
     "nanoid": "^3.3.11",
     "request": "^2.88.2",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "vercel": "^50.17.1"
   },
   "keywords": []
 }
