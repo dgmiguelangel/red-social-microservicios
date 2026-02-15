@@ -1,4 +1,3 @@
-//const store = require('../../../store/dummy');
 const { nanoid } = require('nanoid');
 const auth = require('../auth');
 

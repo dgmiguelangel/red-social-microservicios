@@ -3,8 +3,8 @@ const redis = require('redis');
 const config = require('../config');
 
 const client = redis.createClient({
-    //url: `redis://${config.redis.username}:${config.redis.password}@${config.redis.host}:${config.redis.port}`
-    url: `redis://${config.redis_local.username}:${config.redis_local.password}@${config.redis_local.host}:${config.redis_local.port}`
+    url: `redis://${config.redis.username}:${config.redis.password}@${config.redis.host}:${config.redis.port}`
+    //purl: `redis://${config.redis_local.username}:${config.redis_local.password}@${config.redis_local.host}:${config.redis_local.port}`
 });
 
 (async () => {
@@ -23,6 +23,7 @@ async function get(table, id) {
 }
 
 async function upsert(table, data){
+    console.log(table, data);
     let key = table;
 
     if(data && data.id){
