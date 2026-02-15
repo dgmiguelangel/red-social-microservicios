@@ -35,6 +35,7 @@ function createRemoteDB(host, port) {
         let url = URL + '/' + table;
         body = '';
 
+        console.log(method, data);
         if (method === 'GET' && data) {
 			url += '/'+ data;
 		} else if (data) {
