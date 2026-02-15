@@ -27,6 +27,12 @@ module.exports = {
         host: process.env.REDIS_HOST || 'redis-15106.c83.us-east-1-2.ec2.cloud.redislabs.com',
         port: process.env.REDIS_PORT || 15106,
         username: process.env.REDIS_USERNAME || 'default',
-        password: process.env.REDIS_PASSWORD || 'MSsRq3BlCZD9eCuCryqDbfOLr3L0buSf',
-    }
+        password: process.env.REDIS_PASSWORD || 'MSsRq3BlCZD9eCuCryqDbfOLr3L0buSf',        
+    },
+    redis_local: {
+        host: process.env.REDIS_HOST || '127.0.0.1',
+        port: process.env.REDIS_PORT || 6379,
+        username: process.env.REDIS_USERNAME || '',
+        password: process.env.REDIS_PASSWORD || '',        
+    },
 }

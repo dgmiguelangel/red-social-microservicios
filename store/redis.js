@@ -3,7 +3,8 @@ const redis = require('redis');
 const config = require('../config');
 
 const client = redis.createClient({
-    url: `redis://${config.redis.username}:${config.redis.password}@${config.redis.host}:${config.redis.port}`
+    //url: `redis://${config.redis.username}:${config.redis.password}@${config.redis.host}:${config.redis.port}`
+    url: `redis://${config.redis_local.username}:${config.redis_local.password}@${config.redis_local.host}:${config.redis_local.port}`
 });
 
 client.on('error', (err) => console.error('Redis Client Error: ', err));
