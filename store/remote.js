@@ -67,7 +67,8 @@ function createRemoteDB(host, port) {
         get,
         insert,
         update,
-        query
+        query,
+        upsert
     }
 }
 

@@ -29,7 +29,7 @@ async function upsert(table, data){
         key = `${table}_${data.id}`;
     }
 
-    await client.setEx(key, 10, JSON.stringify(data));
+    await client.setEx(key, 30, JSON.stringify(data));
     return true;
 }
 
