@@ -6,7 +6,7 @@ sudo service nginx start
 # Parar el servidor
 sudo service nginx stop
 
-# Editar la conexiÃ³n
+# Editar la conexion
 sudo nano /etc/nginx/sites-available/default
 
 # Añadir:
